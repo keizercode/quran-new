@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Bitter", sans-serif;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+audio {
+  width: 300px;
+  height: 25px;
+}
+
+audio::-webkit-media-controls-panel {
+  @apply dark:bg-cyan-400;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(31, 41, 55);
+  color: white;
+  text-align: right;
+  font-size: 12px;
+}
